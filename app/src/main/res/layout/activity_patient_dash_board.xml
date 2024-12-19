@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDashBoardActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="174dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="logout"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <TextView
+        android:id="@+id/patientInfo3"
+        android:layout_width="263dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="2dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PatientInfo" />
+
+    <TextView
+        android:id="@+id/PatientName"
+        android:layout_width="360dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/PatientInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/PatientInfo"
+        android:layout_width="263dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PatientName" />
+
+    <TextView
+        android:id="@+id/patientInfo4"
+        android:layout_width="263dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientInfo3" />
+
+    <Button
+        android:id="@+id/BookButton"
+        android:layout_width="173dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="1dp"
+        android:editable="false"
+        android:onClick="startBooking"
+        android:text="@string/book_button"
+        app:layout_constraintBottom_toTopOf="@+id/ViewSchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientInfo4" />
+
+    <Button
+        android:id="@+id/ViewSchButton"
+        android:layout_width="176dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="viewAppointments"
+        android:text="@string/view_appointment"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookButton" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="174dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="viewPrevious"
+        android:text="@string/past_doctors"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewSchButton" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="173dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="viewPreviousAppointment"
+        android:text="Previous Appointment"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
